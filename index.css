@@ -1,0 +1,110 @@
+body,
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body .main {
+  width: 500px;
+  min-height: 200px;
+  max-height: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #cecece;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d68c1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header img {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.main__track {
+  padding: 4px;
+}
+
+#track_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1d68c1;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+#track_table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: auto;
+}
+
+#track_table thead {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+}
+
+#track_table thead tr {
+  padding-right: 15px;
+  display: -webkit-flex;
+  width: 100%;
+  -webkit-align-items: stretch;
+}
+
+#track_table thead th {
+  width: 30%;
+}
+
+#track_table td,
+#track_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#track_table tr:nth-child(even) {
+  background-color: #e6efff;
+}
+
+#track_table tr:hover {
+  background-color: #ddd;
+}
+
+#track_table tbody {
+  display: -webkit-flex;
+  min-height: 100px;
+  max-height: 400px;
+  overflow: auto;
+  -webkit-flex-flow: row wrap;
+}
+#track_table tbody tr {
+  display: -webkit-flex;
+  width: 100%;
+}
+
+#track_table tr td {
+  width: 30%;
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+button.current {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
